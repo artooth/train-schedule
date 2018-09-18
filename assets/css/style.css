@@ -1,0 +1,19 @@
+h1 {
+  color: black;
+  text-align: left;
+  font: 50px;
+
+}
+.panel-primary {
+  background-color: white;
+  padding: 20px;
+}
+
+body {
+  background-image: url(../images/subway.png);
+  background-position: center;
+ 
+}
+
+
+

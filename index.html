@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>Metro Transit || Alexandria Toothman</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <!---Local CSS-->
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <!-- Firebase Reference -->
+    <script src="https://www.gstatic.com/firebasejs/5.5.0/firebase.js"></script>
+
+    <!-- Link to Moment.js should go here -->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+
+</head>
+
+<body>
+    <div class="container fluid">
+
+        <header>
+            <h1>Metro Transit</h1>
+        </header>
+
+        <div class="row">
+            <div class="panel panel-primary col-6">
+                <div class="panel-heading">
+                    <h2 class="panel-title">Schedule</h2>
+                </div>
+                <div class="panel-body">
+                    <table class="table table-striped" id="trainTable">
+                        <thead>
+                            <tr>
+                                <th scope="col">Train</th>
+                                <th scope="col">Destination</th>
+                                <th scope="col">Frequency (min)</th>
+                                <th scope="col">Next Arrival</th>
+                            </tr>
+                        </thead>
+                        <tbody id="trainInfo">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Add Trains to schedule-->
+        <div class="row">
+            <div class="panel panel-primary ">
+                <div class="panel-heading">
+                    <h2 class="panel-title">Add Train</h2>
+                </div>
+                <div class="panel-body">
+                    <form>
+                        <div class="form-group row">
+                            <label for="name-input">Train Name</label>
+                            <input class="form-control" id="name-input" type="text">
+                        </div>
+                        <div class="form-group row">
+                            <label for="destination-input">Destination</label>
+                            <input class="form-control" id="destination-input" type="text">
+                        </div>
+                        <div class="form-group row">
+                            <label for="time-input">First Train Time</label>
+                            <input class="form-control" id="time-input" type="number">
+                        </div>
+                        <div class="form-group row">
+                            <label for="frequency-input">Frequency</label>
+                            <input class="form-control" id="frequency-input" type="number">
+                        </div>
+                        <button class="btn btn-default" id="add-metro" type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+
+
+            <!--JQuery-->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <!-- Local javascript -->
+            <script src="./assets/javascript/app.js"></script>
+        </div>
+</body>
+
+</html>
